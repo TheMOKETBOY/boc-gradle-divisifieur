@@ -1,0 +1,25 @@
+name: Samuel_Workflow 
+on: [push]
+jobs:
+  build:
+    runs-on : ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Wallah ça commence prépare toi ! 
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Tranquille c'est bientôt fini
+        run: ./gradlew build
+        
+      - name : Nan rigole il fait le jar là
+        run: java -jar build/libs/*.jar 3 1
+      
+      - name: C'est bon tu peux commencer à RP 
+        uses: actions/upload-artifact@v2
+        with:
+          name: Lance FiveM
+          path: build/libs/*.jar
+      
+      
