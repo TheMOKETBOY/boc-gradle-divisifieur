@@ -9,6 +9,6 @@ public class Errors {
 
     public static String PARAMETRE_NON_ENTIER = "parametre non entier";
 
-    public static String DIVISION_PAR_ZERO = "Warning! ça divise par zéro !!! !";
+    public static String PAS_DE_DIV_PAR_0 = "pas de division par zero";
 
 }

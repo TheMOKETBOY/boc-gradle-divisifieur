@@ -11,9 +11,4 @@ public class DivisifieurTest {
         int result = Divisifieur.diviser(10, 5);
         Assert.assertEquals(result, 2);
     }
-
-    @Test(expected = java.lang.IllegalArgumentException.class)
-    public void testDivisionByZero() {
-        Divisifieur.diviser(10, 0);
-    }
 }
