@@ -19,7 +19,7 @@ jobs:
       - name: C'est bon tu peux commencer à RP 
         uses: actions/upload-artifact@v2
         with:
-          name: Lance FiveM
+          name: Jar_Fini
           path: build/libs/*.jar
       
       
